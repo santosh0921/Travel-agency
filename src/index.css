@@ -1,0 +1,271 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #333;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #00f2fe;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00f2fe;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #00f2fe;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+  height: 100vh;
+  background: url("https://source.unsplash.com/1600x900/?mountains,travel")
+    center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: #ff7e5f;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+  background: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #2a5298;
+}
+
+/* ================= DESTINATIONS ================= */
+
+.container {
+  padding: 60px 40px;
+  text-align: center;
+  background: #f5f7fa;
+}
+
+.container h1 {
+  font-size: 38px;
+  margin-bottom: 30px;
+  color: #1e3c72;
+}
+
+input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+}
+
+.card-image {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.price-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #1e3c72;
+}
+
+.location {
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.card-content button {
+  margin-top: 10px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-content button:hover {
+  transform: scale(1.08);
+}
+/* ================= LOGIN ================= */
+
+.login-box,
+.thankyou {
+  background: white;
+  width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.login-box h1,
+.thankyou h1 {
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-box button:hover {
+  transform: scale(1.03);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .login-box,
+  .thankyou {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  }
+}
